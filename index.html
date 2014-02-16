@@ -1,0 +1,45 @@
+<!doctype html>
+<html data-ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="fragment" content="!" />
+
+	<title>Millenium Prototype</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-slate-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+
+	<!-- Scripts -->
+	<script src="js/lib/jquery-1.11.0.js"></script>
+	<script src="js/lib/jquery-ui-1.10.4.js"></script>
+	<script src="js/lib/angular.js"></script>
+    <script src="js/lib/angular-ui-router.js"></script>
+    <script src="js/lib/angular-resource.js"></script>
+	<script src="js/lib/angular-animate.js"></script>
+    <script src="js/lib/draganddrop.js"></script>
+	<script src="js/lib/ui-bootstrap-0.10.0.js"></script>
+
+	<!-- Views -->
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+</head>
+
+<body>
+	<!-- Main Header -->
+	<header data-ng-include="'views/shared/_headerPartial.html'" class="fade-transition"></header>
+
+	<!-- Main Content -->
+	<div id="main-content" class="transition-inplace-wrapper">
+		<section data-ui-view="" data-autoscroll="false" class="fade-transition container transition-inplace"></section>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-sm-8">
+        <div class="row" ui-on-Drop="onDrop($event, $data, products)">
+            <div ng-repeat="product in products track by $index" class="product-swatch col-xs-6 draggable" ui-draggable="true" drag="product" on-drop-success="dropSuccessHandler($event, $index, products)">
+                <div class="product-img">
+                    <img src="img/products/{{product.short_name}}.jpg"/>
+                </div>
+                <h1 class="h4">
+                    {{product.name | uppercase}}
+                </h1>
+
+                <p>
+                    <strong>SKU# </strong>{{product.id}}
+                </p>
+                <button class="btn btn-default btn-small" ng-click="starIt()"><span class="fa fa-star"></span></button>
+                <hr/>
+                <p>
+                    <strong>Colors: </strong><br/>
+                    <span ng-repeat="color in product.colors">{{color}} </span>
+                </p>
+                <hr/>
+                <p>
+                    <strong>Description:</strong><br/>
+                    {{product.description}}
+                </p>
+
+                <div class="price-tag">
+                    <p>Starting at: <strong>{{ product.price | currency}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4" ng-controller="productCollectionsController" >
+        <h1 class="h3"><span class="fa fa-star h4"></span> Collections</h1>
+        <hr/>
+        <div class="drop-zone" ui-on-Drop="onDrop($event, $data, productCollections)">
+            <div ng-repeat="product in productCollections track by $index" class="product-mini-swatch draggable" ui-draggable="true" drag="product" on-drop-success="dropSuccessHandler($event, $index, productCollections)">
+                <div class="product-img">
+                    <img src="img/products/{{product.short_name}}.jpg"/>
+                </div>
+                <h1 class="h4 product-title">
+                    {{product.name}}
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>

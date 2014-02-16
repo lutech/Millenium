@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Cell Phone Holder",
+        "id": "1",
+        "short_name": "cell_phone_holder",
+        "description": "Cell phone holder to hold you iPhone and more.",
+        "price" : 1.99,
+        "colors" : ["Red", "Black", "Blue", "Silver"]
+
+    },
+    {
+        "name": "Cool T",
+        "id": "2",
+        "short_name": "cool_t",
+        "description": "Cool T-Shirt for your next expo!",
+        "price" : 6.50,
+        "colors" : ["White","Red", "Black", "Blue", "Silver"]
+
+    },
+    {
+        "name": "The Bottle",
+        "id": "3",
+        "short_name": "the_bottle",
+        "description": "The one and only promotional water bottle.",
+        "price" : 2.50,
+        "colors" : ["Orange", "Black", "Blue", "Silver", "Red", "Green"]
+
+    },
+    {
+        "name": "Ink Link Pen",
+        "id": "4",
+        "short_name": "ink_link_pen",
+        "description": "If you have any Ink Link, this is the pen for you.",
+        "price" : 0.99,
+        "colors" : ["Red", "Black", "Blue"]
+
+    },
+    {
+        "name": "Sticky Memory",
+        "id": "5",
+        "short_name": "sticky_memory",
+        "description": "Stick it to your bad memory with this awesome Memory Stick!",
+        "price" : 4,
+        "colors" : ["Blue"]
+
+    }
+]

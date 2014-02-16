@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="fade-transition form-horizontal">
+        <h2>New Product Entry</h2>
+        <hr/>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="productName">Product Name</label>
+
+            <div class="col-sm-5">
+                <input class="form-control" id="productName" type="text" ng-model="product.name"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="productId">Product ID</label>
+
+            <div class="col-sm-5">
+                <input class="form-control" id="productId" type="text" ng-model="product.id"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="productDescription">Product Description</label>
+
+            <div class="col-sm-5">
+                <input class="form-control" id="productDescription" type="text" ng-model="product.description"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="productPrice">Product Price</label>
+
+            <div class="col-sm-5">
+                <input class="form-control" id="productPrice" type="text" ng-model="product.price"/>
+            </div>
+        </div>
+        <hr/>
+        <div class="form-group text-center">
+            <input type="submit" ng-click="saveProduct()" value="submit" class="btn btn-success btn-large"/>
+        </div>
+    </div>
+</div>

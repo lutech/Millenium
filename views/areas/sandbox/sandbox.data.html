@@ -1,0 +1,53 @@
+<div>
+    <div class="row">
+        <div class="col-sm-4">
+            <label for="productsearch">Search: </label>
+            <input id="productsearch" type="text" ng-model="search.name" placeholder="Search Products"/>
+        </div>
+        <div class="col-sm-4">
+            <label for="filtercolor">Filter by Color: </label>
+            <select class="span-full" id="filtercolor" type="text" ng-model="search.colors">
+                <option></option>
+                <option>Black</option>
+                <option>Blue</option>
+                <option>Green</option>
+                <option>Orange</option>
+                <option>Red</option>
+                <option>Silver</option>
+                <option>White</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <label for="filterprice">Filter by Price: </label>
+            <input id="filterprice" type="text" ng-model="search.price" placeholder="Search Products"/>
+        </div>
+    </div>
+
+    <hr/>
+    <div ng-repeat="product in products | filter:search:strict" class="product-swatch col-xs-4 fade-transition">
+        <div class="product-img">
+            <img src="img/products/{{product.short_name}}.jpg"/>
+        </div>
+        <h1 class="h4">
+            {{product.name | uppercase}}
+        </h1>
+
+        <p>
+            <strong>SKU# </strong>{{product.id}}
+        </p>
+        <hr/>
+        <p>
+            <strong>Colors: </strong><br/>
+            <span ng-repeat="color in product.colors">{{color}} </span>
+        </p>
+        <hr/>
+        <p>
+            <strong>Description:</strong><br/>
+            {{product.description}}
+        </p>
+
+        <div class="price-tag">
+            <p>Starting at: <strong>{{ product.price | currency}}</strong></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="row">
+
+    <!-- Side Bar -->
+    <div class="col-sm-3">
+        <div class="list-group">
+            <a class="list-group-item" ui-sref=".directives">Directives</a>
+            <a class="list-group-item" ui-sref=".data">Data & Services</a>
+            <a class="list-group-item" ui-sref=".crud">CRUD</a>
+            <a class="list-group-item" ui-sref=".interactions">Interactions</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="col-sm-9" ng-controller="productsController">
+        <h1>Sandbox</h1>
+        <div class="ui-view-wrapper transition-inplace-wrapper">
+            <div data-autoscroll="false" class="fade-transition transition-inplace" ui-view>
+            </div>
+        </div>
+    </div>
+
+</div>
